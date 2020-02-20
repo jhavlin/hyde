@@ -8,3 +8,10 @@
 </div>
 {% endblock content %}
 
+{% block title %}{{ page.title }} - {{ config.title }}{% endblock title %}
+
+{% block extra_head %}
+      <meta property="og:title" content="{{ page.title }}"/>
+      <meta property="og:site_name" content="primitiweb.cz/blog"/>
+      <meta property="og:description" content="{{ page.description }}"/>
+{% endblock extra_head %}
