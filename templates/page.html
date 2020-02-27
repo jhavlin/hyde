@@ -16,5 +16,7 @@
       <meta property="og:description" content="{{ page.description }}"/>
       {% if page.extra.og_image %}
       <meta property="og:image" content="{{ config.base_url }}img/og/{{ page.extra.og_image }}"/>
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:image" content="{{ config.base_url }}img/og/{{ page.extra.og_image }}">
       {% endif %}
 {% endblock extra_head %}
