@@ -14,4 +14,7 @@
       <meta property="og:title" content="{{ page.title }}"/>
       <meta property="og:site_name" content="primitiweb.cz/blog"/>
       <meta property="og:description" content="{{ page.description }}"/>
+      {% if page.extra.og_image %}
+      <meta property="og:image" content="{{ config.base_url }}img/og/{{ page.extra.og_image }}"/>
+      {% endif %}
 {% endblock extra_head %}
